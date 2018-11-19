@@ -114,6 +114,26 @@ a:hover{
     font-size: 20px;
 }
 
+.control_star {
+	display: block;
+    position: absolute;
+    right: 10%;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+
+.control__indicator__star {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 20px;
+}
+
+.control_star input:checked ~ .control__indicator__star {
+	color: #ebbc2a;
+}
+
 .cursor{
     cursor: pointer;
 }
@@ -127,7 +147,7 @@ a:hover{
 	font-size: 15px;
 }
 
-.control input {
+.control input, .control_star input {
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
@@ -141,6 +161,7 @@ a:hover{
 	width: 18px;
 	background: #e6e6e6;
 }
+
 
 .control input:checked ~ .control__indicator {
 	background: #1ba94c;

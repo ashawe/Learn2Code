@@ -24,12 +24,7 @@
                             <h3>John Doe</h3>
                         </div>
                         <div class="row">
-                            <div class="col-md-9">
                                 <h6>Rank: #1</h6>
-                            </div>
-                            <div class="col-md-3">
-                                <h6><a href="#">Bookmarked Questions</a></h6>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,9 +96,14 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card-body">
-                                        <span title="Bookmark this Question" class="bookmark-question">
-                                            <i class="far fa-star"></i>
-                                        </span>
+                                        <label class="control_star control--checkbox">
+                                            <input type="checkbox" style="position:absolute" checked>
+                                            <div class="control__indicator__star">
+                                                <span id="1" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                    <i class="fas fa-star" aria-checked=""></i>
+                                                </span>
+                                            </div>
+                                        </label>
                                         <small class="text-muted">Difficulty: Easy<br/> Max Score: 30<br/> Success rate: 100%<br/></small>
                                     </div>
                                 </div>
@@ -121,9 +121,14 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card-body">
-                                        <span title="Bookmark this Question" class="bookmark-question">
-                                            <i class="far fa-star"></i>
-                                        </span>
+                                        <label class="control_star control--checkbox">
+                                            <input type="checkbox" style="position:absolute">
+                                            <div class="control__indicator__star">
+                                                <span id="2" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                    <i class="far fa-star" aria-checked=""></i>
+                                                </span>
+                                            </div>
+                                        </label>
                                         <small class="text-muted">Difficulty: Easy<br/> Max Score: 30<br/> Success rate: 100%<br/></small>
                                     </div>
                                 </div>
@@ -141,9 +146,14 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="card-body">
-                                        <span title="Bookmark this Question" class="bookmark-question">
-                                            <i class="far fa-star"></i>
-                                        </span>
+                                        <label class="control_star control--checkbox">
+                                            <input type="checkbox" style="position:absolute">
+                                            <div class="control__indicator__star">
+                                                <span id="3" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                    <i class="far fa-star" aria-checked=""></i>
+                                                </span>
+                                            </div>
+                                        </label>
                                         <small class="text-muted">Difficulty: Easy<br/> Max Score: 30<br/> Success rate: 100%<br/></small>
                                     </div>
                                 </div>
@@ -177,4 +187,24 @@
             <h3>Developed By <a target="_blank" href="http://harshsaglani.byethost13.com">Harsh Saglani</a> &amp; <a href="#">Kshitij Kadu</a></h3>
         </div>
     </body>
+    <script>
+        function bookmark( element )
+        {
+            var checkbox = element.parentElement.parentElement.childNodes[1];
+            var id = element.id;
+
+            if( checkbox.checked )
+            {
+                console.log("sending unbookmark request for question id: " + id);
+                element.childNodes[1].className = "far fa-star";
+                //send unbookmark request
+            }
+            else
+            {
+                console.log("sending bookmark request for question id: " + id);
+                element.childNodes[1].className = "fas fa-star";
+                //send bookmark request
+            }
+        }
+    </script>
 </html>

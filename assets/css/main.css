@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto';
+}
+
+a{
+    color: #1ba94c;
+}
+a:hover{
+    color: #1b894f;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+}
+
+.navbar-brand{
+    padding: 10px;
+    font-size: 1.75rem;
+}
+
+.page-header{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.myBtn{
+    padding: 10px 30px;
+    background-color: #1ba94c;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+}
+
+.myBtn:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 8px 15px 0 rgba(0,0,0,0.21);
+}
+
+.footer{
+    bottom: 0%;
+    padding: 25px;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0 -3px 10px 0 rgba(115, 143, 147, 0.3);
+}
+
+.bigFlex{
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.center-all{
+    text-align: center;
+}
+
+/* Custom Text sizes */
+
+p.super-small-text{
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+}

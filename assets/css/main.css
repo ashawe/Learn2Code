@@ -79,8 +79,7 @@ a:hover{
 }
 
 .profile-pic{
-    height: 150px;
-    width: 150px;
+    width: 100%;
     border-radius: 50%;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px 0 rgba(115, 143, 147, 0.3);
@@ -207,4 +206,15 @@ a:hover{
 p.super-small-text{
     font-size: 15px;
     margin: 5px 0px 0px 0px;
+}
+@media only screen and (max-width:768px)
+{
+    .center-mob{
+        padding: 20px 0 0px 0;
+        text-align: center;
+    }
+
+    .card-body{
+        padding: 5px;
+    }
 }

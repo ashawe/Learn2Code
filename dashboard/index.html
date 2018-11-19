@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>MAI H00N HACKER - Dashboard</title>
+        <title>Dashboard | MAI H00N HACKER</title>
         <!-- Font -->
             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <!-- Icons -->
@@ -32,7 +32,37 @@
                         <div class="col-md-3">
                             <div class="card border-light mb-3 sort">
                                 <div class="card-body">
-                                    <small>Sort:</small>
+                                    <small class="muted-text">STATUS</small> <br/> <br/>
+                                    <div class="checkbox">
+                                        <label class="control control--checkbox">Solved
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">Partially Solved
+                                            <input type="checkbox" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">Unsolved
+                                            <input type="checkbox" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                    <hr/>
+                                    <small class="muted-text">DIFFICULTY</small> <br/> <br/>
+                                    <div class="checkbox">
+                                        <label class="control control--checkbox">Easy
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">Medium
+                                            <input type="checkbox" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">Hard
+                                            <input type="checkbox" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,6 +92,26 @@
                                     <div class="col-md-9">
                                         <div class="card-body">
                                             <h5 class="card-title">Question Title</h5>
+                                            <p class="card-text">~ <a class="author-name" href="#">Author Name</a><br/>
+                                                A short description of the question.<br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card-body">
+                                            <span title="Bookmark this Question" class="bookmark-question">
+                                                <i class="far fa-star"></i>
+                                            </span>
+                                            <small class="text-muted">Difficulty: Easy<br/> Max Score: 30<br/> Success rate: 100%<br/></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="card border-light mb-3 question cursor">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question Title</h5>
                                             <p class="card-text">A short description of the question.<br/>
                                                 <small class="text-muted">Difficulty: Easy, Max Score: 30, Success rate: 100%</small>
                                             </p>
@@ -70,13 +120,13 @@
                                     <div class="col-md-3">
                                         <div class="card-body">
                                             <a class="author-name" href="#">Author Name</a>
-                                            <span class="bookmark-question">
+                                            <span title="Bookmark this Question" class="bookmark-question">
                                                 <i class="far fa-star"></i>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                 </div>
             </div>

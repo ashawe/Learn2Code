@@ -143,12 +143,12 @@ a:hover{
 }
 
 .control input:checked ~ .control__indicator {
-	background: #2aa1c0;
+	background: #1ba94c;
 }
 
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-	background: #0e647d;
+	background: #1b894f;
 }
 
 .control input:disabled ~ .control__indicator {

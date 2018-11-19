@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+    width: 100%;
+}
+.form {
+  padding: 30px 0px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f3f6f6;
+  width: 80%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px 0 rgba(115, 143, 147, 0.3);
+}
+.form button {
+  text-transform: uppercase;
+  width: 80%;
+  cursor: pointer;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .register-form {
+  display: none;
+}

@@ -22,6 +22,10 @@
   font-size: 14px;
   box-shadow: 0 2px 5px 0 rgba(115, 143, 147, 0.3);
 }
+.form input:disabled{
+  background-color:#bfbfbf;
+}
+
 .form button {
   text-transform: uppercase;
   width: 80%;

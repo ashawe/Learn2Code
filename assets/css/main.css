@@ -79,7 +79,7 @@ a:hover{
 }
 
 .profile-pic{
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px 0 rgba(115, 143, 147, 0.3);
@@ -199,6 +199,10 @@ a:hover{
 
 .control--checkbox input:disabled ~ .control__indicator:after {
 	border-color: #7b7b7b;
+}
+
+.question.solved{
+    background-color: #bbffdd;
 }
 
 /* Custom Text sizes */

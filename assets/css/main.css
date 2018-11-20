@@ -85,6 +85,15 @@ a:hover{
     box-shadow: 0 0 10px 0 rgba(115, 143, 147, 0.3);
 }
 
+.small-profile-pic{
+    width: 30%;
+    margin: 20px;
+}
+
+.mini-profile-pic{
+    width: 7%;
+}
+
 .profile-pic:hover{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 4px 15px 0 rgba(0,0,0,0.21);
 }
@@ -203,6 +212,31 @@ a:hover{
 
 .question.solved{
     background-color: #bbffdd;
+}
+
+.mini-profile{
+    position: relative;
+}
+
+.mini-profile .bookmark-question{
+    display: none;
+}
+
+.mini-profile:hover .bookmark-question {
+    display: block;
+    top:10%;
+    right:3%;
+}
+
+select{
+    width: 100%;
+    border: none;
+    background-color: #f3f6f6;
+    padding: 10px 5px;
+}
+
+select:focus{
+    outline: none;
 }
 
 /* Custom Text sizes */

@@ -9,7 +9,7 @@
   z-index: 1;
   text-align: center;
 }
-.form input {
+.form input, .form textarea {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f3f6f6;

@@ -245,6 +245,17 @@ p.super-small-text{
     font-size: 15px;
     margin: 5px 0px 0px 0px;
 }
+
+h1.jumboNum{
+    font-size: 100px;
+}
+.jumboNum .fas{
+    font-size: 75px;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#fff35d), to(#ef7701)); */
+    background: linear-gradient(to top, #ffe000bf, #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 @media only screen and (max-width:768px)
 {
     .center-mob{

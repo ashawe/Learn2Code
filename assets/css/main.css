@@ -264,12 +264,12 @@ h1.jumboNum{
     margin-bottom: 20px;
 }
 
-.timeline-card{
-    margin: 20px;
+.timeline{
+    padding: 20px 0 20px 0;
 }
 
-.title{
-    padding: 20px 0 0 20px;
+.timeline-card{
+    margin: 20px;
 }
 
 @media only screen and (max-width:768px)

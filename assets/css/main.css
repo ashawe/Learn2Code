@@ -256,6 +256,22 @@ h1.jumboNum{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.profile-card{
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+    margin-bottom: 20px;
+}
+
+.timeline-card{
+    margin: 20px;
+}
+
+.title{
+    padding: 20px 0 0 20px;
+}
+
 @media only screen and (max-width:768px)
 {
     .center-mob{

@@ -16,37 +16,150 @@
     <body>
         <nav class="navbar general-navbar navbar-light">
             <a class="navbar-brand">MAI H00N HACKER</a>
+            <div class="center-all">
+                <button class="myBtn cursor">Logout</button>
+            </div>
         </nav>
         <div class="grey-bg">
             <div class="container">
-                    <div class="card">
-                        <div class="row align-items-center">
-                            <div class="col-md-3" style="text-align:center;">
-                                <img class="profile-pic" src="../assets/img/user.JPG" />
-                                <div class="container">
-                                    <h3>John Doe</h3>
-                                    <h6><i>asdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfsasdfs</i></h6>
-                                </div>
+                <div class="card border-light mb-3 profile-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-3" style="text-align:center;">
+                            <img class="profile-pic" src="../assets/img/user.JPG" />
+                            <div class="container">
+                                <h3>John Doe</h3>
+                                <h6><i>Here is something about me.</i></h6>
                             </div>
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-md-4" style="text-align:center;">
-                                        <h1 class="jumboNum">2</h1>
-                                        <h5>Questions solved</h5>
-                                    </div>
-                                    <div class="col-md-4" style="text-align:center;">
-                                        <h1 class="jumboNum">4</h1>
-                                        <h5>Problems Uploaded</h5>
-                                    </div>
-                                    <div class="col-md-4" style="text-align:center;">
-                                        <h1 class="jumboNum">3<i class="fas fa-fire"></i></h1>
-                                        <h5>(longest streak: 49 days)</h5>
-                                    </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4" style="text-align:center;">
+                                    <h1 class="jumboNum">2</h1>
+                                    <h5>Problems Solved</h5>
+                                </div>
+                                <div class="col-md-4" style="text-align:center;">
+                                    <h1 class="jumboNum">4</h1>
+                                    <h5>Problems Uploaded</h5>
+                                </div>
+                                <div class="col-md-4" style="text-align:center;">
+                                    <h1 class="jumboNum">3<i class="fas fa-fire"></i></h1>
+                                    <h5>(longest streak: 49 days)</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <h1 class="title">Timeline</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-questions">
+                        <div class="card timeline-card border-light mb-3 question cursor">
+                            <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question Title</h5>
+                                            <small class="text-muted"><b>Difficulty:</b> Easy, <b>Max Score:</b> 30, <b>Success rate:</b> 100%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card-body">
+                                            <label class="control_star control--checkbox">
+                                                <input type="checkbox" style="position:absolute" checked="">
+                                                <div class="control__indicator__star">
+                                                    <span id="1" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                            <small class="text-muted"><b>Solved on:</b> dd/mm/yyyy <b>at:</b> HH:mm</small><br/>
+                                            <small class="text-muted"><b>Author:</b> Author Name</small>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card timeline-card border-light mb-3 question cursor">
+                            <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question Title</h5>
+                                            <small class="text-muted"><b>Difficulty:</b> Easy, <b>Max Score:</b> 30, <b>Success rate:</b> 100%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card-body">
+                                            <label class="control_star control--checkbox">
+                                                <input type="checkbox" style="position:absolute" checked="">
+                                                <div class="control__indicator__star">
+                                                    <span id="1" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                            <small class="text-muted small"><b>Uploaded on:</b> dd/mm/yyyy <b>at:</b> HH:mm</small><br/>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card timeline-card border-light mb-3 question cursor">
+                            <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question Title</h5>
+                                            <small class="text-muted"><b>Difficulty:</b> Easy, <b>Max Score:</b> 30, <b>Success rate:</b> 100%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card-body">
+                                            <label class="control_star control--checkbox">
+                                                <input type="checkbox" style="position:absolute" checked="">
+                                                <div class="control__indicator__star">
+                                                    <span id="1" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                            <small class="text-muted small"><b>Solved on:</b> dd/mm/yyyy <b>at:</b> HH:mm</small><br/>
+                                            <small class="text-muted small"><b>Author:</b> Author Name</small>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card timeline-card border-light mb-3 question cursor">
+                            <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Question Title</h5>
+                                            <small class="text-muted"><b>Difficulty:</b> Easy, <b>Max Score:</b> 30, <b>Success rate:</b> 100%</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card-body">
+                                            <label class="control_star control--checkbox">
+                                                <input type="checkbox" style="position:absolute" checked="">
+                                                <div class="control__indicator__star">
+                                                    <span id="1" title="Bookmark this Question" class="bookmark-question" onclick="bookmark(this)">
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                            <small class="text-muted small"><b>Uploaded on:</b> dd/mm/yyyy <b>at:</b> HH:mm</small><br/>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                                <div class="center-all">
+                                    <button class="myBtn cursor">Load More</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <h3>Developed By <a target="_blank" href="http://harshsaglani.byethost13.com">Harsh Saglani</a></h3>

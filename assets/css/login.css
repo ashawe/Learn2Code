@@ -22,6 +22,17 @@
   font-size: 14px;
   box-shadow: 0 2px 5px 0 rgba(115, 143, 147, 0.3);
 }
+
+.challenge input, .challenge textarea{
+  width: 95%;
+}
+
+.challenge select
+{
+  width: 95%;
+  margin-bottom: 15px;
+}
+
 .form input:disabled{
   background-color:#bfbfbf;
 }

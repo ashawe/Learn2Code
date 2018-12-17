@@ -37,7 +37,7 @@
   background-color:#bfbfbf;
 }
 
-.form button {
+.form .myBtn .full-size {
   text-transform: uppercase;
   width: 80%;
   cursor: pointer;
@@ -50,4 +50,16 @@
 }
 .form .register-form {
   display: none;
+}
+
+.tab{
+  border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover{
+  background-color: #fff;
+  box-shadow: 0 3px 10px 0 rgba(115,143,147,0.3);
+  border: 1px solid rgb(255,255,255);
 }

@@ -164,4 +164,26 @@
             <h3>Developed By <a target="_blank" href="http://harshsaglani.byethost13.com">Harsh Saglani</a></h3>
         </div>
     </body>
+
+    <script>
+        function bookmark( element )
+        {
+            var checkbox = element.parentElement.parentElement.childNodes[1];
+            var id = element.id;
+
+            if( checkbox.checked )
+            {
+                console.log("sending unbookmark request for question id: " + id);
+                element.childNodes[1].className = "far fa-star";
+                //send unbookmark request
+            }
+            else
+            {
+                console.log("sending bookmark request for question id: " + id);
+                element.childNodes[1].className = "fas fa-star";
+                //send bookmark request
+            }
+        }
+    </script>
+    
 </html>

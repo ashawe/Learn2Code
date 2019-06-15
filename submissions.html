@@ -26,6 +26,7 @@
                 <div class="row">
                     <!-- SORTING / FILTERS -->
                     <div class="col-md-3">
+                    <div id="sorter-filter">
                         <a class="no-decor" href="question.html">
                             <div class="tab cursor">
                                 <h6 style="padding: 15px 20px;">Problem</h6>
@@ -57,6 +58,7 @@
                                 <small class="muted-text">Rate this challenge:</small> <br> <br> -->
                             </div>
                         </div>
+                    </div>
                     </div>
                     <!-- Question -->
                     <div class="col-md-9">
@@ -163,5 +165,17 @@
         <div class="footer">
             <h3>Developed By <a target="_blank" href="http://harshsaglani.byethost13.com">Harsh Saglani</a></h3>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery-scrolltofixed-min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#sorter-filter').scrollToFixed({ marginTop: 10, limit: function() {
+                    var limit = $('.footer').offset().top - $('#sorter-filter').height() - 30;
+                    return limit;
+                }, dontSetWidth: false, removeOffsets: true});
+            });
+        </script>
     </body>
 </html>

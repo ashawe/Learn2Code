@@ -288,6 +288,27 @@ h1.jumboNum{
     margin: 5px 0;
 }
 
+.fab-button{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 25px 25px;
+    border-radius: 50%;
+    background-color: #1ba94c;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
 @media only screen and (max-width:768px)
 {
     .center-mob{
